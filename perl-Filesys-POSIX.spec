@@ -12,7 +12,7 @@ Release:	6
 Summary:	Provide POSIX-like filesystem semantics in pure Perl
 License:	Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/~wrath/Filesys-POSIX-0.10.0/lib/Filesys/POSIX.pm
+URL:		https://search.cpan.org/~wrath/Filesys-POSIX-0.10.0/lib/Filesys/POSIX.pm
 Source0:	http://search.cpan.org/CPAN/authors/id/W/WR/WRATH/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
