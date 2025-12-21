@@ -15,6 +15,7 @@ Group:		Development/Perl
 URL:		https://search.cpan.org/~wrath/Filesys-POSIX-0.10.0/lib/Filesys/POSIX.pm
 Source0:	http://search.cpan.org/CPAN/authors/id/W/WR/WRATH/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::Exception)
 BuildRequires:	perl(Test::NoWarnings)
