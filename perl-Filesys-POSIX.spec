@@ -6,13 +6,13 @@
 %endif
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	6
+Version:	%{upstream_version}
+Release:	7
 
 Summary:	Provide POSIX-like filesystem semantics in pure Perl
 License:	Artistic
 Group:		Development/Perl
-URL:		https://search.cpan.org/~wrath/Filesys-POSIX-0.10.0/lib/Filesys/POSIX.pm
+URL:		https://github.com/xantronix/Filesys-POSIX
 Source0:	http://search.cpan.org/CPAN/authors/id/W/WR/WRATH/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	make
