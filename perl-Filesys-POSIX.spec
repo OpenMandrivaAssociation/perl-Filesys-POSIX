@@ -7,7 +7,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	0.9.19
-Release:	5
+Release:	6
 
 Summary:	Provide POSIX-like filesystem semantics in pure Perl
 License:	Artistic
@@ -16,6 +16,7 @@ URL:		https://github.com/xantronix/Filesys-POSIX
 Source0:	https://cpan.metacpan.org/authors/id/X/XA/XAN/Filesys-POSIX-0.9.19.tar.gz
 
 BuildRequires:	make
+BuildRequires:	perl(Try::Tiny)
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::Exception)
 BuildRequires:	perl(Test::NoWarnings)
@@ -29,17 +30,19 @@ This modules provide POSIX-like filesystem semantics in pure Perl.
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
-%make
-
+%make_build
 # Kharec: a bad .t file breaks the rebuild...
 # %check
 # %make test || :
+
+%check
+make test || :
 
 %install
 %makeinstall_std
 
 %files
-%doc COPYRIGHT LICENSE MANIFEST README META.yml
+%doc LICENSE META.yml
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
 
