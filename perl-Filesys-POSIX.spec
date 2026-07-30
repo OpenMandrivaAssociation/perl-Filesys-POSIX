@@ -6,8 +6,8 @@
 %endif
 
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.9.19
+Release:	2
 
 Summary:	Provide POSIX-like filesystem semantics in pure Perl
 License:	Artistic
@@ -25,7 +25,7 @@ BuildArch:	noarch
 This modules provide POSIX-like filesystem semantics in pure Perl.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n Filesys-POSIX-0.9.19
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
