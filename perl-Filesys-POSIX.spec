@@ -1,5 +1,5 @@
 %define upstream_name Filesys-POSIX
-%define upstream_version 0.10.0
+%define upstream_version 0.9.19
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(Filesys::POSIX(.*)\\)'
@@ -7,13 +7,13 @@
 
 Name:		perl-%{upstream_name}
 Version:	%{upstream_version}
-Release:	7
+Release:	1
 
 Summary:	Provide POSIX-like filesystem semantics in pure Perl
 License:	Artistic
 Group:		Development/Perl
 URL:		https://github.com/xantronix/Filesys-POSIX
-Source0:	http://search.cpan.org/CPAN/authors/id/W/WR/WRATH/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/X/XA/XAN/Filesys-POSIX-0.9.19.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
