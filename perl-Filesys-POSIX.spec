@@ -7,7 +7,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	0.9.19
-Release:	4
+Release:	5
 
 Summary:	Provide POSIX-like filesystem semantics in pure Perl
 License:	Artistic
@@ -33,7 +33,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 # Kharec: a bad .t file breaks the rebuild...
 # %check
-# %make test
+# %make test || :
 
 %install
 %makeinstall_std
