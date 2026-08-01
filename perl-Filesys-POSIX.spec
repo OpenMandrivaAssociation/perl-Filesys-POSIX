@@ -7,7 +7,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	0.9.19
-Release:	48
+Release:	49
 
 Summary:	Provide POSIX-like filesystem semantics in pure Perl
 License:	Artistic
